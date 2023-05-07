@@ -35,6 +35,10 @@ class Kons(
             return builder.build()
         }
 
+        fun register(plugin: Plugin, body: KonsBuilder.() -> Unit) {
+            KonsRegistry.registerToCommandMap(plugin, build(plugin, body))
+        }
+
         fun Plugin.buildKons(body: KonsBuilder.() -> Unit) = build(this, body)
 
         fun Plugin.registerKons(body: KonsBuilder.() -> Unit) {
