@@ -1,4 +1,4 @@
-package com.github.devlaq.kons.error
+package kr.entropi.minecraft.kons.error
 
 sealed class KonsError : Throwable()
 

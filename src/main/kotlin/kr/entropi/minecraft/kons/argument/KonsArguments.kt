@@ -1,4 +1,4 @@
-package com.github.devlaq.kons.argument
+package kr.entropi.minecraft.kons.argument
 
 open class KonsArguments {
     internal val args: MutableList<KonsArgument<*>> = mutableListOf()

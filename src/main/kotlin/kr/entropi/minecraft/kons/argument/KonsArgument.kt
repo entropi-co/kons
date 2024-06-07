@@ -1,10 +1,10 @@
-package com.github.devlaq.kons.argument
+package kr.entropi.minecraft.kons.argument
 
-import com.github.devlaq.kons.KonsCompleter
-import com.github.devlaq.kons.context.KonsCallContext
-import com.github.devlaq.kons.error.KonsArgumentFilterError
-import com.github.devlaq.kons.error.KonsArgumentParseError
-import com.github.devlaq.kons.error.KonsArgumentTargetNotFoundError
+import kr.entropi.minecraft.kons.KonsCompleter
+import kr.entropi.minecraft.kons.context.KonsCallContext
+import kr.entropi.minecraft.kons.error.KonsArgumentFilterError
+import kr.entropi.minecraft.kons.error.KonsArgumentParseError
+import kr.entropi.minecraft.kons.error.KonsArgumentTargetNotFoundError
 import kotlin.reflect.KProperty
 
 abstract class KonsArgument<Type>(val filter: (Type) -> Boolean, val completerOverride: KonsCompleter?) {

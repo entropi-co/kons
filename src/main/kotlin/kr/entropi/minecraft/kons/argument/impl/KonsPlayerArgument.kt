@@ -1,12 +1,12 @@
-package com.github.devlaq.kons.argument.impl
+package kr.entropi.minecraft.kons.argument.impl
 
-import com.github.devlaq.kons.KonsCompleter
-import com.github.devlaq.kons.error.KonsArgumentFilterError
-import com.github.devlaq.kons.argument.KonsArgument
-import com.github.devlaq.kons.argument.KonsArgumentBuilder
-import com.github.devlaq.kons.argument.KonsArguments
-import com.github.devlaq.kons.context.KonsCallContext
-import com.github.devlaq.kons.error.KonsArgumentTargetNotFoundError
+import kr.entropi.minecraft.kons.KonsCompleter
+import kr.entropi.minecraft.kons.error.KonsArgumentFilterError
+import kr.entropi.minecraft.kons.argument.KonsArgument
+import kr.entropi.minecraft.kons.argument.KonsArgumentBuilder
+import kr.entropi.minecraft.kons.argument.KonsArguments
+import kr.entropi.minecraft.kons.context.KonsCallContext
+import kr.entropi.minecraft.kons.error.KonsArgumentTargetNotFoundError
 import org.bukkit.Bukkit
 import org.bukkit.entity.Player
 
@@ -34,18 +34,7 @@ class KonsPlayerArgument(
 
 }
 
-class KonsPlayerArgumentBuilder: KonsArgumentBuilder<KonsPlayerArgument>() {
-    private var filter: (Player) -> Boolean = { true }
-    private var completer: KonsCompleter? = null
-
-    fun filter(filter: (Player) -> Boolean) {
-        this.filter = filter
-    }
-
-    fun complete(body: KonsCompleter) {
-        this.completer = body
-    }
-
+class KonsPlayerArgumentBuilder: KonsArgumentBuilder<Player, KonsPlayerArgument>() {
     override fun build(): KonsPlayerArgument {
         return KonsPlayerArgument(filter, completer)
     }

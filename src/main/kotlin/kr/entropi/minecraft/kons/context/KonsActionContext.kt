@@ -1,6 +1,6 @@
-package com.github.devlaq.kons.context
+package kr.entropi.minecraft.kons.context
 
-import com.github.devlaq.kons.argument.KonsArguments
+import kr.entropi.minecraft.kons.argument.KonsArguments
 import org.bukkit.command.CommandSender
 
 class KonsActionContext<ArgumentType: KonsArguments?>(

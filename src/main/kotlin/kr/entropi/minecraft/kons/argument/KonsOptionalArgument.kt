@@ -1,6 +1,6 @@
-package com.github.devlaq.kons.argument
+package kr.entropi.minecraft.kons.argument
 
-import com.github.devlaq.kons.KonsCompleter
+import kr.entropi.minecraft.kons.KonsCompleter
 
 abstract class KonsOptionalArgument<Type>(
     filter: (Type?) -> Boolean,

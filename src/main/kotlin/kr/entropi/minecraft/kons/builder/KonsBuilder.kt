@@ -1,9 +1,9 @@
-package com.github.devlaq.kons.builder
+package kr.entropi.minecraft.kons.builder
 
-import com.github.devlaq.kons.Kons
-import com.github.devlaq.kons.KonsErrorHandler
-import com.github.devlaq.kons.argument.KonsArguments
-import com.github.devlaq.kons.context.KonsActionContext
+import kr.entropi.minecraft.kons.Kons
+import kr.entropi.minecraft.kons.KonsErrorHandler
+import kr.entropi.minecraft.kons.argument.KonsArguments
+import kr.entropi.minecraft.kons.context.KonsActionContext
 import org.bukkit.command.CommandSender
 import org.bukkit.plugin.Plugin
 

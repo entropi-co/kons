@@ -1,24 +1,28 @@
 plugins {
-    kotlin("jvm") version "1.8.0"
+    kotlin("jvm") version "1.9.23"
+    id("io.papermc.paperweight.userdev") version "1.7.1"
 }
 
-group = "com.github.devlaq"
+group = "kr.entropi.minecraft"
 version = "1.0-SNAPSHOT"
 
 repositories {
-    mavenCentral()
-    mavenLocal()
-
     maven("https://hub.spigotmc.org/nexus/content/repositories/snapshots/")
     maven("https://oss.sonatype.org/content/repositories/snapshots")
     maven("https://oss.sonatype.org/content/repositories/central")
+    maven("https://jitpack.io")
+    maven("https://repo.papermc.io/repository/maven-public/")
+    mavenCentral()
+    mavenLocal()
 }
 
 dependencies {
     testImplementation(kotlin("test"))
 
-    compileOnly("org.spigotmc:spigot-api:1.19.3-R0.1-SNAPSHOT")
-    testCompileOnly("org.spigotmc:spigot-api:1.19.3-R0.1-SNAPSHOT")
+    implementation(kotlin("stdlib-jdk8"))
+
+    // Minecrat / Spigot
+    paperweight.paperDevBundle("1.20.4-R0.1-SNAPSHOT")
 }
 
 tasks.test {
@@ -26,5 +30,5 @@ tasks.test {
 }
 
 kotlin {
-    jvmToolchain(8)
+    jvmToolchain(17)
 }

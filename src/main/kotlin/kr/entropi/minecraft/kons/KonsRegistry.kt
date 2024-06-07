@@ -1,6 +1,6 @@
-package com.github.devlaq.kons
+package kr.entropi.minecraft.kons
 
-import com.github.devlaq.kons.error.*
+import kr.entropi.minecraft.kons.error.*
 import org.bukkit.Bukkit
 import org.bukkit.command.PluginCommand
 import org.bukkit.command.SimpleCommandMap

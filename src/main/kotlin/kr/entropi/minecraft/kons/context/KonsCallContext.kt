@@ -1,6 +1,6 @@
-package com.github.devlaq.kons.context
+package kr.entropi.minecraft.kons.context
 
-import com.github.devlaq.kons.Kons
+import kr.entropi.minecraft.kons.Kons
 import org.bukkit.command.CommandSender
 
 class KonsCallContext(
