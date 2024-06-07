@@ -21,4 +21,3 @@ class HelloArguments: KonsArguments() {
     }
 }
 ```
-![example_screenshot](images/example_screenshot.png)
