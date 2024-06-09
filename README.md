@@ -1,3 +1,6 @@
+# Deprecated
+### Kons is deprecated by 06/09/2024, use [arki-commands](https://github.com/entropi-kr/arki-commands) instead
+
 # Kons (ALPHA)
 
 A simple command framework for Bukkit and Kotlin
